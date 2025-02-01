@@ -12,11 +12,11 @@ RUN dnf install -y \
     && flatpak remote-add --if-not-exists \
         flathub https://dl.flathub.org/repo/flathub.flatpakrepo \
     && flatpak install --assumeyes \
-        flathub ... \
+        flathub org.openttd.OpenTTD \
     && git config -f /etc/rdesktop/rdesktop.ini \
-	rdesktop.title "Personal ..." \
+	rdesktop.title "Personal OpenTTD" \
     && git config -f /etc/rdesktop/rdesktop.ini \
-	rdesktop.exec "flatpak run ..."
+	rdesktop.exec "flatpak run org.openttd.OpenTTD"
 
 # ensure to become root for systemd
 #ENTRYPOINT ["/sbin/init"]

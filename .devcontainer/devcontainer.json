@@ -1,5 +1,5 @@
 {
-    "name": "<replace> remote desktop environment",
+    "name": "Play OpenTTD remote desktop environment",
     "image": "ghcr.io/gbraad-apps/<replace>:latest",
     "runArgs": [ "--cap-add=NET_ADMIN", "--cap-add=NET_RAW", "--device=/dev/net/tun", "--device=/dev/fuse" ],
 
